@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR11</title>
+    <link rel="stylesheet" href="LR12.css">
+    <link rel="icon" href="A.png">
+</head>
+<body>
+    <div class="card">
+        <div class="radioGroup">
+            <label>
+                <input type="radio" id="easy" name="difficult" value="easy" checked> <span class="choose">Легкий</span>
+            </label>
+            <label>
+                <input type="radio" id="medium" name="difficult" value="medium"> <span class="choose">Середній</span>
+            </label>
+            <label>
+                <input type="radio" id="hard" name="difficult" value="hard"> <span class="choose">Складний</span>
+            </label>
+        </div>
+        <div class="englishWords">
+            <img class="arrow" id="previous" src="arrow.png" alt="previous">
+            <div id="cardWord"></div>
+            <img class="arrow" id="next" src="arrow.png" alt="next">
+        </div>
+        <span id="count">1/10</span>
+    </div>
+    <div class="translateAction">
+        <div class="results">
+            <span class="correct">0</span>
+            <span class="incorrect">0</span>
+        </div>
+        <div class="inputGroup">
+            <input type="text" name="translate" id="translate" placeholder="ваш переклад">
+            <button type="button" id="translateButt">Перевірити</button>
+        </div>
+        <span id="answer"></span>
+    </div>
+    <div id="modalOverlay">
+        <div id="modal" class="modal">
+            <h2>Результати</h2>
+            <p id="resultMessage"></p>
+            <button id="closeModal">Закрити</button>
+            <button id="reset">Пройти спочатку</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="LR12.js"></script>
+</body>
+</html>
